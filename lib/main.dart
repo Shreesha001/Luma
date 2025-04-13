@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:luma/home_page.dart';
+import 'package:luma/pallete.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Luma App',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+      theme: ThemeData.light(useMaterial3: true).copyWith(
+        scaffoldBackgroundColor: Pallete.whiteColor,
+        appBarTheme: const AppBarTheme(backgroundColor: Pallete.whiteColor),
       ),
       home: const HomePage(),
     );
