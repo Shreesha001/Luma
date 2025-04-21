@@ -10,8 +10,9 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return MaterialApp(
+      
       debugShowCheckedModeBanner: false,
       title: 'Luma App',
       theme: ThemeData.light(useMaterial3: true).copyWith(
@@ -22,3 +23,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+ 
